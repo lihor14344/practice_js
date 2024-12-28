@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Viewer with Items</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <h1>Category Viewer</h1>
+    <p>Click a button to view items in that category:</p>
+
+    <!-- Buttons for categories -->
+    <div id="buttons">
+        <button onclick="showCategory('Shirts')">Shirts</button>
+        <button onclick="showCategory('Skirts')">Skirts</button>
+        <button onclick="showCategory('Dress')">Dress</button>
+        <button onclick="showCategory('Bags')">Bags</button>
+    </div>
+
+    <!-- Display area for category -->
+    <div id="categoryDisplay">
+        <h2 id="categoryTitle">Select a category</h2>
+        <p id="categoryDescription"></p>
+        <div id="itemsContainer" class="grid"></div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="practice.js"></script>
+</body>
+</html>
